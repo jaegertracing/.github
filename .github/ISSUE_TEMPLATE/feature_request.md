@@ -8,6 +8,8 @@ assignees: ''
 ---
 
 <!--
+Please delete this comment before posting.
+
 Welcome to the Jaeger project! 👋🎉
 
 - Please search for existing issues to avoid creating duplicate bugs/feature requests.

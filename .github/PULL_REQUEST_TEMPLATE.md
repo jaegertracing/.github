@@ -1,4 +1,6 @@
 <!--
+Please delete this comment before posting.
+
 We appreciate your contribution to the Jaeger project! 👋🎉
 
 Before creating a pull request, please make sure:
@@ -12,7 +14,7 @@ Before creating a pull request, please make sure:
 -->
 
 ## Which problem is this PR solving?
-- 
+- <!-- e.g. Resolves #123 -->
 
 ## Short description of the changes
 - 
