@@ -11,6 +11,7 @@ Before creating a pull request, please make sure:
   - See https://github.com/jaegertracing/jaeger/blob/master/CONTRIBUTING_GUIDELINES.md#certificate-of-origin---sign-your-work
 - You added unit tests for the new functionality
 - You mention in the PR description which issue it is addressing, e.g. "Resolves #123"
+- You created the PR from a feature branch, and not master
 -->
 
 ## Which problem is this PR solving?
