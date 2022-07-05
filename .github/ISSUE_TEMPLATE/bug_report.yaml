@@ -1,0 +1,119 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the Jaeger project! 👋🎉 Thanks for taking the time to fill out this bug report.
+
+        Before you post:
+        - Please search for existing issues to avoid creating duplicate bugs/feature requests.
+        - Please be respectful and considerate of others (see [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)).
+        - If you only have a question, you may get a faster response by asking in [our Slack chat room](https://cloud-native.slack.com/archives/CGG7NFUJ3).
+          If you don't have a CNCF Slack account, you may sign up at: https://slack.cncf.io/.
+
+        Additional information helps us troubleshoot the issue faster.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: |
+        Please describe the problem you are experiencing. What is not working?
+        Try to focus on the functional aspect of the issue, rather than technical details.
+      placeholder: |
+        As a [description of a user persona, e.g. Jaeger operator, Jaeger power user]
+        I want [functionality]
+        so that [benefit].
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What do you expected to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste any relevant log output.
+        This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem.
+  - type: markdown
+    attributes:
+      value: |
+        ## Jaeger setup
+        Please describe your Jaeger setup.
+  - type: input
+    id: version
+    attributes:
+      label: Jaeger backend version
+      description: Which version of the Jaeger backend are you running?
+      placeholder: "Ex: v1.36.0"
+  - type: textarea
+    id: sdk
+    attributes:
+      label: SDK
+      description: Which SDK are you using to send data to Jaeger?
+      placeholder: "Ex: Jaeger Go client vX.Y.Z, or OpenTelemetry Java SDK vX.Y.Z"
+  - type: textarea
+    id: pipeline
+    attributes:
+      label: Pipeline
+      description: Please describe your data collection pipeline configuration.
+      placeholder: |
+        Ex: OTEL SDK -> OTEL collector -> Jaeger Collector -> [Jaeger proto] -> Kafka -> Jaeger Ingester -> Elasticsearch
+        Ex: OTEL SDK -> [OTLP] -> Jaeger-all-in-one
+        Ex: Jaeger SDK -> jaeger-agent -> ...
+  - type: input
+    id: storage
+    attributes:
+      label: Stogage backend
+      description: Which storage backend are you using?
+      placeholder: "Ex: Cassandra vX.Y, Elasticsearch v7.x, AWS Elasticsearch, ..."
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      description: On which OS do you deploy Jaeger?
+      placeholder: "Ex: Linux, Windows, etc."
+  - type: input
+    id: deployment
+    attributes:
+      label: Deployment model
+      description: How do you deploy Jaeger components?
+      placeholder: "Ex: Docker, Kubernetes, binaries on bare metal, ..."
+  - type: textarea
+    id: deployment_config
+    attributes:
+      label: Deployment configs
+      description: |
+        If applicable, include examples of your deployment configuration.
+        This will be automatically formatted into code, so no need for backticks.
+      render: shell
+      placeholder: "Ex: docker-compose.yml, k8s manifests, command line options, ..."
