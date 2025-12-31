@@ -1,0 +1,12 @@
+name: Chore
+description: A small task like clean-up, refactoring, or part of a larger issue
+title: "[chore]: "
+labels: ["chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the Jaeger project! 👋🎉
+
+        Before you post:
+        - Please do not use this template for reporting bugs or for feature requests
