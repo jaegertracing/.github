@@ -10,3 +10,10 @@ body:
 
         Before you post:
         - Please do not use this template for reporting bugs or for feature requests
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement
+      description: What needs to be done?
+    validations:
+      required: true
