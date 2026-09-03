@@ -19,7 +19,7 @@ We appreciate your contribution to the Jaeger project! 👋🎉
 - [ ] I have run lint and test steps successfully: `make lint test`
 
 ## AI Usage in this PR (choose one)
-See [AI Usage Policy](https://github.com/jaegertracing/jaeger/blob/main/CONTRIBUTING_GUIDELINES.md#ai-usage-policy).
+See [AI Usage Policy](https://github.com/jaegertracing/jaeger/blob/main/AI_POLICY.md).
 - [ ] **None**: No AI tools were used in creating this PR
 - [ ] **Light**: AI provided minor assistance (formatting, simple suggestions)
 - [ ] **Moderate**: AI helped with code generation or debugging specific parts
